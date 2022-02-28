@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RentActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/karaoke" />
+
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nexabold"
+            android:text="Rental Form"
+            android:textColor="@color/orange"
+            android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/popupbg"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@color/lightorange"
+            android:elevation="3dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/nexabold"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="Item:"
+                android:textColor="@color/orange"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvItemOrdered"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/nexabold"
+                android:layout_gravity="center"
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/nexalight"
+            android:hint="Name"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/address"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/nexalight"
+            android:hint="Address"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/nexalight"
+            android:hint="Phone Number"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/orangeoutline"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/nexabold"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="Total:"
+                android:textColor="@color/orange"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nexabold"
+                android:layout_gravity="center"
+                android:textColor="@color/orange"
+                android:text="100.00"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCheckout"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTotal"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/nexabold"
+        android:text="Checkout"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llShop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lightorange"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/cart"
+                android:fontFamily="@font/nexabold"
+                android:text=" Shop"
+                android:textColor="#FF8240"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/lightorange"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/llMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lightorange"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/address"
+                android:fontFamily="@font/nexabold"
+                android:text=" Map"
+                android:textColor="#FF8240"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/lightorange"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:id="@+id/llUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/lightorange"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/person"
+                android:fontFamily="@font/nexabold"
+                android:text=" User"
+                android:textColor="#FF8240"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/orange"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:layout_marginTop="225dp"
+        android:background="@color/lightorange"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/edittextbg"
+            android:drawableStart="@drawable/address"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:fontFamily="@font/nexalight"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittextbg"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:fontFamily="@font/nexalight"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittextbg"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:fontFamily="@font/nexalight"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittextbg"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:elevation="2dp"
+            android:fontFamily="@font/nexalight"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittextbg"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Rent Status:"
+                android:textColor="@color/orange"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tvOrderStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/nexalight"
+                android:gravity="center_vertical"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/orange"
+        android:layout_below="@id/layout">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/man"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/namebg"
+        android:elevation="3dp"
+        android:fontFamily="@font/nexabold"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="0dp"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvName"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="430dp"
+        android:background="@drawable/button1"
+        android:elevation="10dp"
+        android:fontFamily="@font/nexalight"
+        android:text="Logout"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
